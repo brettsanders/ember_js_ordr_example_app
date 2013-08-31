@@ -28,20 +28,22 @@ App.TablesRoute = Ember.Route.extend({
 // 4. define tables controller and specify it will manage
 //    a list of objects
 App.TablesController = Ember.ArrayController.extend();
-App.TableController  = Ember.ObjectController.extend();
+// App.TableController  = Ember.ObjectController.extend();
 
 
 // 5. (in index.html) create template with special tags
 //    to render the data
 
 // 3. Models
+// DS is the ember data namespace
+
 App.Store = DS.Store.extend({
   revision: 11,
   adapter: 'DS.FixtureAdapter'
 });
 
 App.Table = DS.Model.extend({
-  tab: DS.belongsTo('App.Tab')
+  tab: DS.belongsTo('App.Tab') // one of few places using string like this
 });
 
 App.Tab = DS.Model.extend({
