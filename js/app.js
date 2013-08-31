@@ -15,6 +15,12 @@ App.ApplicationRoute = Ember.Route.extend({
   }
 });
 
+App.IndexRoute = Ember.Route.extend({
+  redirect: function(){
+    this.transitionTo('tables');
+  }
+});
+
 
 // In Ember, the Router is responsible for getting data from
 // the model
