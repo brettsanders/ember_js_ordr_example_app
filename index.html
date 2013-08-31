@@ -44,7 +44,7 @@
   <script type="text/x-handlebars" data-template-name="_tableMenu">
     <h2>TABLES</h2>
     {{#each table in controller}}
-      {{ table.id }}
+      {{#linkTo "table" table}}{{ table.id }}{{/linkTo}}
     {{/each}}
   </script>
 
