@@ -39,6 +39,9 @@ App.TablesController = Ember.ArrayController.extend();
 // App.TableController  = Ember.ObjectController.extend();
 App.FoodController = Ember.ArrayController.extend();
 
+// Will use a model property, so it's an object controller
+// Instead of a plain controller
+App.TabController = Ember.ObjectController.extend();
 
 
 // 5. (in index.html) create template with special tags
