@@ -17,6 +17,23 @@
   </head>
   <body>
 
+  <!-- data-template-name doesn't do anything
+      just names the template -->
+  <script type="text/x-handlebars" data-template-name="application">
+    <h1>Ordr</h1>
+    {{ outlet }}
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="index">
+  Hello, Ember!
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="tables">
+    TABLES
+  </script>
+
+
+    <!-- Scripts needed for App, in footer -->
     <script src="js/libs/jquery-1.8.3.min.js"></script>
     <script src="js/libs/handlebars-1.0.0.rc.2.js"></script>
     <script src="js/libs/ember.js"></script>
