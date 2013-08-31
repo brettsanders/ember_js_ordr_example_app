@@ -64,9 +64,9 @@
 
   <script type="text/x-handlebars" data-template-name="food">
     <ul id="menu">
-      {{#each food in controller}}
+      {{#each controller}}
       <li>
-        <p>{{ food.name }}</p>
+        <p>{{ name }}</p>
       </li>
       {{/each}}
     </ul>
