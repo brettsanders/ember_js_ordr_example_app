@@ -37,7 +37,16 @@ App.TablesRoute = Ember.Route.extend({
 //    a list of objects
 App.TablesController = Ember.ArrayController.extend();
 // App.TableController  = Ember.ObjectController.extend();
-App.FoodController = Ember.ArrayController.extend();
+App.FoodController = Ember.ArrayController.extend({
+  addFood: function(food){
+    var table = this.controllerFor('table').get('model'),
+        tabItems = table.get('tab.tabItems');
+    tabItems.createRecord({
+      food: food,
+      cents: food.get('cents')
+    });
+  }
+});
 
 // Will use a model property, so it's an object controller
 // Instead of a plain controller
