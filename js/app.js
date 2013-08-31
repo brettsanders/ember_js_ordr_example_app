@@ -28,6 +28,7 @@ App.TablesRoute = Ember.Route.extend({
 // 4. define tables controller and specify it will manage
 //    a list of objects
 App.TablesController = Ember.ArrayController.extend();
+App.TableController  = Ember.ObjectController.extend();
 
 // Models
 // 3. define model and load data from it
