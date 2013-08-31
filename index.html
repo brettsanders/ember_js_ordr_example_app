@@ -38,14 +38,21 @@
       <div class="four columns" id="tables">
       {{ partial "tableMenu" }}
       </div>
+      <div class="eight columns" id="order">
+        {{ outlet }}
+      </div>
     </div>
   </script>
 
   <script type="text/x-handlebars" data-template-name="_tableMenu">
     <h2>TABLES</h2>
     {{#each table in controller}}
-      {{#linkTo "table" table}}{{ table.id }}{{/linkTo}}
+      {{#linkTo "table" table class="panel six columns"}}{{ table.id }}{{/linkTo}}
     {{/each}}
+  </script>
+
+   <script type="text/x-handlebars" data-template-name="table">
+    <h2>TABLE <span>{{id}}</span></h2>
   </script>
 
 
