@@ -8,6 +8,14 @@ App.Router.map(function(){
   }); // '/#/tables'
 });
 
+App.ApplicationRoute = Ember.Route.extend({
+  setupController: function() {
+    this.controllerFor('food').set('model', App.Food.find());
+    App.Food.find();
+  }
+});
+
+
 // In Ember, the Router is responsible for getting data from
 // the model
 // 2. make router object that loads data
