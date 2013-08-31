@@ -31,23 +31,14 @@ App.TablesRoute = Ember.Route.extend({
   }
 });
 
-// ember generates this code for us
-// App.TableRoute = Ember.Route.extend({
-//   model: function(params){
-//     return App.Table.find(params.table_id);
-//   }//,
-//  // setupController: function(controller, model){
-//  //   this._super(controller, model);
-//  //   this.controllerFor('somecontroller')
-//  // }
-// });
 
 // Controllers
 // 4. define tables controller and specify it will manage
 //    a list of objects
 
 // AUTO GENERATED
-// App.TablesController = Ember.ArrayController.extend();
+// App.TablesController = Ember.ArrayController.extend(
+//  sortProperties: ['id']  );
 
 // AUTO GENERATED
 // App.TableController  = Ember.ObjectController.extend();
