@@ -20,8 +20,13 @@
   <!-- data-template-name doesn't do anything
       just names the template -->
   <script type="text/x-handlebars" data-template-name="application">
-    <h1>Ordr</h1>
-    {{ outlet }}
+    <div class="row">
+      <div class="twelve columns">
+        <h1>Ordr</h1>
+        <hr>
+        <p>{{ outlet }}</p>
+      </div>
+    </div>
   </script>
 
   <script type="text/x-handlebars" data-template-name="index">
@@ -29,6 +34,14 @@
   </script>
 
   <script type="text/x-handlebars" data-template-name="tables">
+    <div class="row">
+      <div class="four columns" id="tables">
+      {{ partial "tableMenu" }}
+      </div>
+    </div>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="_tableMenu">
     <h2>TABLES</h2>
     {{#each table in controller}}
       {{ table.id }}
