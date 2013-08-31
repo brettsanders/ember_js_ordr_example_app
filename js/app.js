@@ -35,7 +35,11 @@ App.TablesRoute = Ember.Route.extend({
 // App.TableRoute = Ember.Route.extend({
 //   model: function(params){
 //     return App.Table.find(params.table_id);
-//   }
+//   }//,
+//  // setupController: function(controller, model){
+//  //   this._super(controller, model);
+//  //   this.controllerFor('somecontroller')
+//  // }
 // });
 
 // Controllers
