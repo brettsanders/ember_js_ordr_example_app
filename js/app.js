@@ -4,7 +4,7 @@ var App = Ember.Application.create();
 // 1. make resource route for tables
 App.Router.map(function(){
 	this.resource('tables', function(){
-    this.resource('table', {path: ':table_id '});
+    this.resource('table', {path: ':table_id'});
   }); // '/#/tables'
 });
 
