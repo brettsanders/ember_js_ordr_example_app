@@ -47,6 +47,13 @@ App.TabController = Ember.ObjectController.extend();
 // 5. (in index.html) create template with special tags
 //    to render the data
 
+// View Helpers
+Ember.Handlebars.registerBoundHelper('money', function(value){
+  return (value % 100 === 0 ?
+          value / 100 + '.00' :
+          parseInt(value/100, 10) + '.' + value % 100);
+});
+
 // 3. Models
 // DS is the ember data namespace
 

@@ -72,11 +72,11 @@
   <script type="text/x-handlebars" data-template-name="tab">
     <ul id="customer-tab">
       {{#each tabItem in tabItems }}
-        <li>{{ tabItem.food.name }} <span>${{ tabItem.cents }}</span></li>
+        <li>{{ tabItem.food.name }} <span>${{ money tabItem.cents }}</span></li>
       {{else}}
       <li><h3>Click a food to add it</h3></li>
       {{/each}}
-      <li id='total'><h3>Total <span>${{ cents }}</h3></li>
+      <li id='total'><h3>Total <span>${{ money cents }}</h3></li>
     </ul>
   </script>
 
