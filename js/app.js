@@ -37,6 +37,8 @@ App.TablesRoute = Ember.Route.extend({
 //    a list of objects
 App.TablesController = Ember.ArrayController.extend();
 // App.TableController  = Ember.ObjectController.extend();
+App.FoodController = Ember.ArrayController.extend();
+
 
 
 // 5. (in index.html) create template with special tags
