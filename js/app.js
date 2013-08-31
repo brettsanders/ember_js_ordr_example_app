@@ -35,7 +35,11 @@ App.TablesRoute = Ember.Route.extend({
 // Controllers
 // 4. define tables controller and specify it will manage
 //    a list of objects
-App.TablesController = Ember.ArrayController.extend();
+
+// AUTO GENERATED
+// App.TablesController = Ember.ArrayController.extend();
+
+// AUTO GENERATED
 // App.TableController  = Ember.ObjectController.extend();
 App.FoodController = Ember.ArrayController.extend({
   addFood: function(food){
@@ -50,7 +54,12 @@ App.FoodController = Ember.ArrayController.extend({
 
 // Will use a model property, so it's an object controller
 // Instead of a plain controller
-App.TabController = Ember.ObjectController.extend();
+
+// Isn't mentioned in a route, but we mention it
+// by name to be rendered from a template
+// That's enough info for Ember to dynamically
+// Generate it
+// App.TabController = Ember.ObjectController.extend();
 
 
 // 5. (in index.html) create template with special tags
