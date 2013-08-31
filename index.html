@@ -50,7 +50,6 @@
 
   <script type="text/x-handlebars" data-template-name="_tableMenu">
     <h2>TABLES</h2>
-    {{controller}}
     {{#each table in controller}}
       {{#linkTo "table" table class="panel six columns"}}{{ table.id }}{{/linkTo}}
     {{/each}}
@@ -62,7 +61,6 @@
         {{ render "food" }}
       </div>
       <div class="nine columns">
-        {{ controller }}
         <h2>Table <span>{{id}}</span></h2>
         {{ render "tab" tab }}
       </div>
