@@ -51,8 +51,25 @@
     {{/each}}
   </script>
 
-   <script type="text/x-handlebars" data-template-name="table">
-    <h2>TABLE <span>{{id}}</span></h2>
+  <script type="text/x-handlebars" data-template-name="table">
+    <div class="row">
+      <div class="three columns">
+        {{ render "food" }}
+      </div>
+      <div class="nine columns">
+        <h2>Table <span>{{id}}</span></h2>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="food">
+    <ul id="menu">
+      {{#each food in controller}}
+      <li>
+        <p>{{ food.name }}</p>
+      </li>
+      {{/each}}
+    </ul>
   </script>
 
 
