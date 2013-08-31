@@ -29,7 +29,10 @@
   </script>
 
   <script type="text/x-handlebars" data-template-name="tables">
-    TABLES
+    <h2>TABLES</h2>
+    {{#each table in controller}}
+      {{ table.id }}
+    {{/each}}
   </script>
 
 
